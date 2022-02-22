@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiempo Dojo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+  <header class="nav-bar">
+    
+    <nav>
+      <h1>DojoWeather</h1>
+      <ul>
+        <li><a href="#" onclick="alerta(this)">Burbank</a></li>
+        <li><a href="#" onclick="alerta(this)">Chicago</a></li>
+        <li><a href="#" onclick="alerta(this)">Dallas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="body-container">
+    <div class="sanjose">
+      <h2>San Jose</h2>
+      <form>
+        <label for="">show temperature in</label>
+        <select name="escalatemperatura" onchange="cambioEscala(this)">
+          <option>C</option>
+          <option>F</option>
+        </select>
+      </form>
+    </div>
+    <div class="row">
+      <div class="dia">
+        <h2>Hoy</h2>
+        <img src="img/assets/some_rain.png" alt="">
+        <p>Parcialmete nublado</p>
+        <p class="temperaturas">
+          <span class="tempMax" id="temperatura1">24°</span>
+          <span class="tempMin" id="temperatura2">18°</span>
+        </p>
+      </div>
+      <div class="dia">
+        <h2>Hoy</h2>
+        <img src="img/assets/some_sun.png" alt="">
+        <p>Parcialmete nublado</p>
+        <p class="temperaturas">
+          <span class="tempMax" id="temperatura3">24°</span>
+          <span class="tempMin" id="temperatura4">18°</span>
+        </p>
+      </div>
+      <div class="dia">
+        <h2>Hoy</h2>
+        <img src="img/assets/some_clouds.png" alt="">
+        <p>Parcialmete nublado</p>
+        <p class="temperaturas">
+          <span class="tempMax" id="temperatura5">24°</span>
+          <span class="tempMin" id="temperatura6">18°</span>
+        </p>
+      </div>
+      <div class="dia lastdia">
+        <h2>Hoy</h2>
+        <img src="img/assets/some_sun.png" alt="">
+        <p>Parcialmete nublado</p>
+        <p class="temperaturas">
+          <span class="tempMax" id="temperatura7">24°</span>
+          <span class="tempMin" id="temperatura8">18°</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="cookie">
+      <img src="img/assets/cookie.png" alt="cookie">
+      <div class="texto">
+        <h3>Stop! Cookie time.</h3>
+        <p>Lorem ipsum dolor sit amet a</p>
+      </div>
+      <button onclick="aceptar()">Aceptar</button>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
